@@ -9,7 +9,7 @@
 title: "Jekyll exercice"
 description: "Jekyll exercice"
 baseurl: "/jekyll_blog" # the subpath of your site, e.g. /blog
-url: "http://www.arnovandevijver.github.io"
+url: "http://www.arnovandevijver.github.io/jekyll_blog"
 
 # Build settings
 markdown: kramdown
