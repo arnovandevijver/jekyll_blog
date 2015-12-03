@@ -8,8 +8,6 @@
 # Site settings
 title: Jekyll exercice
 description: Jekyll exercice
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://arnovandevijver.github.io/jekyll_blog" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
