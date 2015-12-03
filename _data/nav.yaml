@@ -1,0 +1,14 @@
+-
+  navLabel: "Home"
+  navUrl: "/"
+  navCurrent: home
+
+-
+  navLabel: "Blog"
+  navUrl: "/blog/"
+  navCurrent: blog
+
+-
+  navLabel: "Work"
+  navUrl: "/work/"
+  navCurrent: work

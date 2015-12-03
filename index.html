@@ -1,6 +1,34 @@
 ---
 layout: default
+current_section: home
 ---
-<p>
-  hello world
-</p>
+
+<div>
+  <h1>Homepage</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div>
+  {% assign blogposts = site.posts | sort: "date" | reverse %}
+
+  {% for item in blogposts limit:1 %}
+    {% if forloop.first %}<ul>{% endif %}
+      <li>
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <p>{{ item.date | date: "%d.%m.%Y" }}</p>
+        <p>{{ item.blogpostSummary }}</p>
+      </li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
+
+<div>
+  {% assign works = site.work | sort: "date" | reverse %}
+  {% for item in works limit:1 %}
+    {% if forloop.first %}<ul>{% endif %}
+      <li>
+        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+      </li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
