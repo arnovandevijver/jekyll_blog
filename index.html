@@ -14,7 +14,7 @@ current_section: home
   {% for item in blogposts limit:1 %}
     {% if forloop.first %}<ul>{% endif %}
       <li>
-        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
         <p>{{ item.date | date: "%d.%m.%Y" }}</p>
         <p>{{ item.blogpostSummary }}</p>
       </li>
@@ -27,7 +27,7 @@ current_section: home
   {% for item in works limit:1 %}
     {% if forloop.first %}<ul>{% endif %}
       <li>
-        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
       </li>
     {% if forloop.last %}</ul>{% endif %}
   {% endfor %}
