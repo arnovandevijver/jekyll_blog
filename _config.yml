@@ -37,4 +37,5 @@ defaults:
       type: work
     values:
       layout: work_detail
+      permalink: /work/:title/
       current_section: work
