@@ -8,6 +8,8 @@
 # Site settings
 title: "Jekyll exercice"
 description: "Jekyll exercice"
+baseurl: "/jekyll_blog" # the subpath of your site, e.g. /blog
+url: "http://www.arnovandevijver.github.io"
 
 # Build settings
 markdown: kramdown
