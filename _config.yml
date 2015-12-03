@@ -9,7 +9,7 @@
 title: "Jekyll exercice"
 description: "Jekyll exercice"
 baseurl: "jekyll_blog" # the subpath of your site, e.g. /blog
-url: "http://arnovandevijver.github.io/jekyll_blog" # the base hostname & protocol for your site
+url: "http://arnovandevijver.github.io/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
