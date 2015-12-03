@@ -29,7 +29,7 @@ defaults:
       type: posts
     values:
       layout: post_detail
-      permalink: {{ site.baseurl }}/blog/:title
+      permalink: /blog/:title
       current_section: blog
   -
     scope:
@@ -37,5 +37,5 @@ defaults:
       type: work
     values:
       layout: work_detail
-      permalink: {{ site.baseurl }}/work/:title
+      permalink: /work/:title
       current_section: work
