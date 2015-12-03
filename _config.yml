@@ -29,7 +29,7 @@ defaults:
       type: posts
     values:
       layout: post_detail
-      permalink: /:title
+      permalink: /blog/:title/
       current_section: blog
   -
     scope:
