@@ -1,3 +1,3 @@
 # Having fun with Jekyll
 
-First jekyll project @ school (test)
+First jekyll project @ school (test 2)
