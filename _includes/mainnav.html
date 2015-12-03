@@ -1,5 +1,5 @@
 {% for item in site.data.nav %}
   {% if forloop.first %}<nav><ul>{% endif %}
-    <li><a href="{{ item.navUrl }}">{{ item.navLabel }}</a> {% if page.current_section == item.navCurrent %}current{% endif %}</li>
+    <li><a href="{{ site.baseurl }}{{ item.navUrl }}">{{ item.navLabel }}</a> {% if page.current_section == item.navCurrent %}current{% endif %}</li>
   {% if forloop.last %}</ul></nav>{% endif %}
 {% endfor %}
