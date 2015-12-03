@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% if page.workUrl %}
+<p>Url of the project: <a href="fake.html">{{ page.workUrl }}</a></p>
+{% endif %}
+
+{% for picture in page.workImages %}
+  <p><img src="/img/work/{{ picture.file }}" alt="{{ picture.description }}"></p>
+{% endfor %}
+
+{{ content }}
